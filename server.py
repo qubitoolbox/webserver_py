@@ -4,4 +4,6 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 import socketserver
 
 #create a static variable to hold PORT
-PORT = 8100
+PORT = 8101 # setting to this port number to minimize port conflict
+
+
