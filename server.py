@@ -6,4 +6,7 @@ import socketserver
 #create a static variable to hold PORT
 PORT = 8101 # setting to this port number to minimize port conflict
 
+#set handler class into a variable
+Handler = http.server.SimpleHTTPRequestHandler
+
 
