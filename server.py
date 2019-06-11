@@ -21,3 +21,10 @@ Handler.extensions_map={
 			'.js': 'application/x-javascript',
 			'': 'aplication/octet-stream', #Default
 }
+#invoke server with parameters to handle MIME and Ports exposure.
+httpd = socketserver.TCPServer(("", PORT), Handler)
+
+#prints message to console if server is running
+print("server at port", PORT)
+#loop inf once server is invoked
+httpd.serve_forever()
