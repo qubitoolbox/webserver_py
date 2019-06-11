@@ -1,3 +1,4 @@
+#Copied for homework asked by professor.
 #import libraries
 import http.server
 from http.server import HTTPServer, BaseHTTPRequestHandler
