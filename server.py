@@ -9,4 +9,15 @@ PORT = 8101 # setting to this port number to minimize port conflict
 #set handler class into a variable
 Handler = http.server.SimpleHTTPRequestHandler
 
+#set types of MIME to be handled
 
+Handler.extensions_map={
+
+			'.manifest': 'text/cache-manifest',
+			'.mp3': 'audio/mp4', # serve MP3 MIME
+			'.jpg': 'image/jpg', #
+			'.mp4': 'video/mp4', # serve Video Content
+			'.css': 'text/css',
+			'.js': 'application/x-javascript',
+			'': 'aplication/octet-stream', #Default
+}
